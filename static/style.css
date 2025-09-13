@@ -6,7 +6,12 @@
   --accent: #ffcc00;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* { 
+  box-sizing: 
+  border-box; 
+  margin: 0; 
+  padding: 0; 
+}
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: linear-gradient(-45deg, #111, #1a1a1a, #222, #111);
@@ -74,7 +79,7 @@ h1 {
   color: var(--muted);
 }
 
-/* Animation background */
+
 @keyframes gradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
