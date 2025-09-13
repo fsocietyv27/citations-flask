@@ -1,0 +1,82 @@
+:root {
+  --bg: #0a0a0a;
+  --panel: #1a1a1a;
+  --text: #f5f5f5;
+  --muted: #bbb;
+  --accent: #ffcc00;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(-45deg, #111, #1a1a1a, #222, #111);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap {
+  width: min(700px, 92vw);
+  background: var(--panel);
+  border-radius: 14px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,.35);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.quote-box {
+  position: relative;
+  background: #111;
+  border-radius: 12px;
+  padding: 25px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.4);
+  transition: opacity 0.5s ease;
+}
+
+.quote-icon {
+  color: var(--accent);
+  font-size: 1.3rem;
+}
+
+.citation {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.btn {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .08s ease, filter .2s ease;
+}
+.btn:hover { filter: brightness(1.1); }
+.btn:active { transform: scale(0.97); }
+
+.footer {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Animation background */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Citations aléatoires{% endblock %}
+
+{% block content %}
+  <main class="wrap">
+    <h1>💡 Générateur de citations</h1>
+
+    <div class="quote-box" id="quote-box">
+      <i class="fa-solid fa-quote-left quote-icon"></i>
+      <p id="citation" class="citation">Clique sur le bouton pour afficher une citation.</p>
+      <i class="fa-solid fa-quote-right quote-icon"></i>
+    </div>
+
+    <button id="btn" class="btn">Nouvelle citation</button>
+
+    <footer class="footer">
+      <p>⚡ Projet Python (Flask) + HTML/CSS/JS</p>
+    </footer>
+  </main>
+{% endblock %}
