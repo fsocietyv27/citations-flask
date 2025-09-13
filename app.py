@@ -5,7 +5,6 @@ from flask import Flask, render_template, jsonify
 
 BASE_DIR = Path(__file__).resolve().parent
 
-# Charge les citations au démarrage
 with open(BASE_DIR / "quotes.json", encoding="utf-8") as f:
     QUOTES = json.load(f)
 
